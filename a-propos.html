@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - MyCustomDesk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Segoe UI Variable", "Segoe UI", sans-serif;
+            background-color: #1A1D21;
+            color: #E8ECEF;
+            line-height: 1.6;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(90deg, #2C2F33, #3A3E44);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #E8ECEF;
+            text-decoration: none;
+            font-size: clamp(14px, 1.5vw, 16px);
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #0078D4;
+        }
+        .header {
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, #2C2F33, #1A1D21);
+            margin-top: 60px;
+        }
+        .header h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 700;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: #2C2F33;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        .card p {
+            margin-bottom: 1.5rem;
+            font-size: clamp(14px, 1.5vw, 16px);
+        }
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .btn {
+            flex: 1;
+            padding: 0.8rem;
+            background: linear-gradient(90deg, #0078D4, #005DA6);
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px;
+            font-size: clamp(14px, 1.5vw, 16px);
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #005DA6, #003C74);
+            transform: translateY(-2px);
+        }
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2C2F33;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .content {
+                margin: 1rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            .btn-group {
+                flex-direction: column;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            .navbar a {
+                margin: 0.5rem 0;
+            }
+            .header h1 {
+                font-size: clamp(24px, 5vw, 32px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="#a-propos">À propos</a>
+        <a href="#boutique">Boutique</a>
+    </div>
+    <div class="header">
+        <h1>À Propos de MyCustomDesk</h1>
+    </div>
+    <div class="content">
+        <div class="card">
+            <p>Nous sommes passionnés par la création de logiciels qui transforment votre expérience numérique. Basée sur l’innovation et la simplicité, notre entreprise développe des solutions pour rendre votre espace de travail Windows unique et organisé.</p>
+            <p>Notre produit phare, MyCustomDesk, vous permet de personnaliser votre bureau avec des fonds d’écran dynamiques (JPG, PNG, BMP) et des bordures entièrement ajustables en position, taille, couleur et titre. Avec une organisation intuitive, une sauvegarde automatique et une compatibilité optimale sur Windows 10 (1903+) et 11, MyCustomDesk allie créativité et performance, même hors ligne.</p>
+            <p>Distribué via notre site, accompagné d’un SAV réactif et d’une FAQ détaillée, MyCustomDesk est conçu pour vous offrir un bureau à votre image. Rejoignez-nous pour redéfinir votre espace numérique !</p>
+            <div class="btn-group">
+                <a href="#faq" class="btn">Foire Aux Questions</a>
+                <a href="#support" class="btn">Support SAV</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 MyCustomDesk. Tous droits réservés.</p>
+    </div>
+</body>
+</html>
